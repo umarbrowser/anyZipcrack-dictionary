@@ -1,18 +1,17 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+#imports
 import zipfile
 import optparse
 from threading import Thread
-
-
+#Try extarct if found password
 def extractFile(zFile, password):
     try:
         zFile.extractall(pwd=password)
         print '[+] Found password ' + password + '\n'
     except:
         pass
-
-
+# main thats gives an interace using optparse
 def main():
     parser = optparse.OptionParser("usage %prog "+\
       "-f <zipfile> -d <dictionary>")
