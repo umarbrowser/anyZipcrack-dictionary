@@ -1,5 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+
+print ''' 
+Free anyZipcrack-dictionary created by:
+pyc0d3r: http://www.umarbrowser.co.vu/
+'''
 #imports
 import zipfile
 import optparse
